@@ -1,3 +1,3 @@
 # DLWT
 
-Deep Learnign with Tensorflow
+Deep Learning with Tensorflow
