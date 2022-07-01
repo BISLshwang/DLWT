@@ -3,3 +3,4 @@
 print("hello world")
 print("hello")
 print("tmp")
+print("123")
