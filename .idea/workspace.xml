@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8a61c41-e5cc-4dce-9f5b-d271dd172b59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/2.tensorflow_basic/data_preparation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2.tensorflow_basic/model_definition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/5.cnn/cnn_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/5.cnn/data_augmentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/5.cnn/transfer_learning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/5.cnn/cnn_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/5.cnn/cnn_basic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +15,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/5.cnn/cnn_basic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+            <state relative-caret-position="150">
+              <caret line="64" column="39" lean-forward="true" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
               <folding>
-                <element signature="e#23#46#0" expanded="true" />
+                <element signature="e#20#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/5.cnn/transfer_learning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding>
+                <element signature="e#19#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/5.cnn/data_augmentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1558">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,6 +70,9 @@
         <option value="$PROJECT_DIR$/src/2.tensorflow_basic/model_definition.py" />
         <option value="$PROJECT_DIR$/src/2.tensorflow_basic/data_preparation.py" />
         <option value="$PROJECT_DIR$/src/5.cnn/cnn_basic.py" />
+        <option value="$PROJECT_DIR$/src/5.cnn/transfer_learning_tf_hub.py" />
+        <option value="$PROJECT_DIR$/src/5.cnn/transfer_learning.py" />
+        <option value="$PROJECT_DIR$/src/5.cnn/data_augmentation.py" />
       </list>
     </option>
   </component>
@@ -106,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnn_basic">
+  <component name="RunManager" selected="Python.transfer_learning">
     <configuration name="cnn_basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DLWT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,6 +147,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/5.cnn/cnn_basic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_augmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DLWT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/5.cnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/5.cnn/data_augmentation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,8 +221,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="transfer_learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DLWT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/5.cnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/5.cnn/transfer_learning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.transfer_learning" />
+        <item itemvalue="Python.data_augmentation" />
         <item itemvalue="Python.cnn_basic" />
         <item itemvalue="Python.data_preparation" />
         <item itemvalue="Python.temp" />
@@ -192,7 +264,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656050965996</updated>
       <workItem from="1656050967302" duration="2899000" />
-      <workItem from="1656657886574" duration="6724000" />
+      <workItem from="1656657886574" duration="11724000" />
     </task>
     <task id="LOCAL-00001" summary="Add python file for test">
       <created>1656051730938</created>
@@ -208,11 +280,18 @@
       <option name="project" value="LOCAL" />
       <updated>1656303460715</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add python file for test">
+      <created>1656670981898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656670981898</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9623000" />
+    <option name="totallyTimeSpent" value="14623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -250,7 +329,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add python file for test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DLWT$cnn_basic.coverage" NAME="cnn_basic Coverage Results" MODIFIED="1656670723696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/5.cnn" />
+    <SUITE FILE_PATH="coverage/DLWT$cnn_basic.coverage" NAME="cnn_basic Coverage Results" MODIFIED="1656674098372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/5.cnn" />
+    <SUITE FILE_PATH="coverage/DLWT$transfer_learning.coverage" NAME="transfer_learning Coverage Results" MODIFIED="1656675906714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/5.cnn" />
+    <SUITE FILE_PATH="coverage/DLWT$data_augmentation.coverage" NAME="data_augmentation Coverage Results" MODIFIED="1656675643860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/5.cnn" />
     <SUITE FILE_PATH="coverage/DLWT$data_preparation.coverage" NAME="data_preparation Coverage Results" MODIFIED="1656664119283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/2.tensorflow_basic" />
     <SUITE FILE_PATH="coverage/DLWT$temp.coverage" NAME="temp Coverage Results" MODIFIED="1656051612165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
@@ -281,10 +362,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/5.cnn/cnn_basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        <state relative-caret-position="150">
+          <caret line="64" column="39" lean-forward="true" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding>
-            <element signature="e#23#46#0" expanded="true" />
+            <element signature="e#20#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/5.cnn/transfer_learning_tf_hub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/5.cnn/data_augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/5.cnn/transfer_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="e#19#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

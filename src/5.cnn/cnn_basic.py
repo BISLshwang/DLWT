@@ -2,11 +2,15 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
-from tensorflow.python.client import device_lib
 
-# check gpu conncection
-print(device_lib.list_local_devices())
-print(tf.test.is_gpu_available)
+# check gpu connection
+tf.debugging.set_log_device_placement(True)
+tf.config.list_physical_devices('GPU')
+
+# check logging device placement
+a = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+b = tf.constant([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
+c = tf.matmul(a, b)
 
 # 2. load dataset using keras module
 # fashion_mnist
@@ -54,8 +58,8 @@ model.evaluate(x_test, y_test, verbose=2)
 # CNN
 # data preprocessing
 
-x_train_final = x_train.reshape((-1, 28, 28, 1)) / 255.
-x_test_final = x_test.reshape((-1, 28, 28, 1)) / 255.
+x_train_final = x_train.reshape((-1, 28, 28, 1))
+x_test_final = x_test.reshape((-1, 28, 28, 1))
 print(x_train_final.shape, x_test_final.shape)
 
 model_with_conv = tf.keras.Sequential([
