@@ -37,7 +37,7 @@ plt.show()
 
 # flip
 img_data = expand_dims(data, 0)
-data_gen = ImageDataGenerator(horizontal_filp=True, vertical_filp=True)
+data_gen = ImageDataGenerator(horizontal_flip=True, vertical_flip=True)
 data_iter = data_gen.flow(img_data, batch_size=1)
 fig = plt.figure(figsize=(30, 30))
 
@@ -79,7 +79,7 @@ plt.show()
 
 # zoom
 img_data = expand_dims(data, 0)
-data_gen = ImageDataGenerator(zoom=[0.4, 1.5])
+data_gen = ImageDataGenerator(zoom_range=0.1)
 data_iter = data_gen.flow(img_data, batch_size=1)
 fig = plt.figure(figsize=(30, 30))
 
