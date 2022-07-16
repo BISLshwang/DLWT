@@ -85,7 +85,7 @@ train_generator = train.flow_from_directory(train_dir,
 
 valid = ImageDataGenerator(rescale=1./255.)
 
-valid_generator = valid.flow_from_directory(train_dir,
+valid_generator = valid.flow_from_directory(valid_dir,
                                             target_size=(image_height, image_width),
                                             color_mode="rgb",
                                             batch_size=BATCH_SIZE,

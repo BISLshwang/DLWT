@@ -19,7 +19,14 @@
       <paths name="shwang@143.248.30.152:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/usr/local/anaconda3/envs/DLWT" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/shwang/DLTF" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="shwang@143.248.30.152:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/shwang/DLTF" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
