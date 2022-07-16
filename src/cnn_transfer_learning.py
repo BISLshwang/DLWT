@@ -1,8 +1,12 @@
 #1. import library
 import numpy as np
 import tensorflow as tf
+
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 from tensorflow.keras import Model
 from tensorflow.keras.models import Sequential
@@ -13,15 +17,13 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 #import tensorflow_hub as hub
 
 # check gpu connection
-tf.debugging.set_log_device_placement(True)
-tf.config.list_physical_devices('GPU')
+#tf.debugging.set_log_device_placement(True)
+#tf.config.list_physical_devices('GPU')
 
 # check logging device placement
 a = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
 b = tf.constant([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
 c = tf.matmul(a, b)
-
-print(c)
 
 # 2. load pre-trained model
 model = ResNet50(include_top=True,
@@ -60,8 +62,8 @@ image_height = 224
 image_width = 224
 # classify cat and dog from kaggle
 # dog=12501, cat=12501
-train_dir = "/usr/local/anaconda3/envs/DLWT/src/5.cnn/data/catanddog/train"
-valid_dir = "/usr/local/anaconda3/envs/DLWT/src/5.cnn/data/catanddog/valildation"
+train_dir = "/opt/project/data/catanddog/train"
+valid_dir = "/opt/project/data/catanddog/valildation"
 
 # data preprocessing uisng ImageDataGenerator
 train = ImageDataGenerator(
@@ -94,7 +96,7 @@ valid_generator = valid.flow_from_directory(train_dir,
 history = model.fit(train_generator,
                     epochs=10,
                     validation_data=valid_generator,
-                    verbose=2)
+                    verbose=1)
 
 # 7. model performance visualization
 accuracy = history.history["accuracy"]
@@ -133,6 +135,3 @@ for i in range(8):
         ax.text(3, 17, class_names[prediction_values[i]], color="yellow", fontsize=14)
     else:
         ax.text(3, 17, class_names[prediction_values[i]], color="red", fontsize=14)
-
-
-
