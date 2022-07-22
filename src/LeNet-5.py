@@ -27,7 +27,7 @@ class LeNet(Sequential):
         self.add(Dense(nb_classes, activation='softmax'))
 
         self.compile(optimizer='adam',
-                     loss = categorical_crossentropy,
+                     loss = 'categorical_crossentropy',
                      metrics = ['accuracy'])
 
 # 3. generate LeNet-5 model
@@ -43,7 +43,6 @@ train_dir = "/opt/project/data/catanddog/train"
 valid_dir = "/opt/project/data/catanddog/valildation"
 
 # 5. data augmentation
-
 train = ImageDataGenerator(
     rescale=1./255,
     rotation_range=10,
